@@ -11,14 +11,14 @@ for number in test_range:
 	and int(number[0]) % 2 != 0 
 	and int(number[2]) % 2 != 0):
 
+		c = 0
+
 		# sets parameter for the second and following iterations
 		previous_iteration_number = number[0]
 
-		c = 0
-
 		# compares current iteration number with previous iteration number
 		for current_number in number:
-			if current_number == str(int(previous_iteration_number)+1):
+			if int(current_number) == int(previous_iteration_number) + 1:
 				c += 1
 
 				# checks if the current number is the last one; if it is, 
